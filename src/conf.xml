@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<woss>
+	<dbstore class="com.example.ModuleImp.DBStoreImp">
+		<url>oracle.jdbc.driver.OracleDriver</url>
+		<driver>jdbc:oracle:thin:@127.0.0.1:1521:XE</driver>
+		<username>scott</username>
+		<password>1234</password>
+	</dbstore>
+
+	<logger class="com.example.ModuleImp.LoggerImp">
+		<log-properties>src/log4j.properties</log-properties>
+	</logger>
+
+	<backup class="com.example.ModuleImp.BackUpImp">
+		<back-temp>src/backup.txt</back-temp>
+	</backup>
+
+	<gather class="com.example.ModuleImp.GatherImp">
+		<src-file>src/temp.txt</src-file>
+	</gather>
+
+	<client class="com.example.ModuleImp.ClientImp">
+		<back_file></back_file>
+		<ip>127.0.0.1</ip>
+		<client-port>8989</client-port>
+	</client>
+
+	<server class="com.example.ModuleImp.ServerImp">
+		<ser-port>8989</ser-port>
+		<back-file></back-file>
+	</server>
+</woss>

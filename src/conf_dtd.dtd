@@ -1,0 +1,42 @@
+<!ELEMENT woss (dbstore,logger,backup,gather,client,server)>
+	<!ATTLIST dbstore class CDATA #REQUIRED>
+	<!ATTLIST logger class CDATA #REQUIRED>
+	<!ATTLIST backup class CDATA #REQUIRED>
+	<!ATTLIST gather class CDATA #REQUIRED>
+	<!ATTLIST client class CDATA #REQUIRED>
+	<!ATTLIST server class CDATA #REQUIRED>
+	
+<!ELEMENT dbstore (url,driver,username,password)>
+	<!ELEMENT url (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ELEMENT username (#PCDATA)>
+	<!ELEMENT password (#PCDATA)>
+	
+<!ELEMENT logger (log-properties)>
+	<!ELEMENT log-properties (#PCDATA)>
+
+<!ELEMENT backup (back-temp)>
+	<!ELEMENT back-temp (#PCDATA)>
+	
+<!ELEMENT gather (src-file)>
+	<!ELEMENT src-file (#PCDATA)>
+
+<!ELEMENT client (client-back-file,ip,client-port)>
+	<!ELEMENT  client-back-file (#PCDATA)>
+	<!ELEMENT  ip (#PCDATA)>
+	<!ELEMENT client-port (#PCDATA)>
+	
+<!ELEMENT server (ser-port,ser-back-file)>
+	<!ELEMENT ser-port (#PCDATA)>
+	<!ELEMENT ser-back-file (#PCDATA)>
+
+
+
+
+
+
+
+
+
+	
+
